@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		881DAED022050118009CFFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DAECF22050118009CFFBC /* AppDelegate.swift */; };
+		881DAED222050118009CFFBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DAED122050118009CFFBC /* ViewController.swift */; };
+		881DAED522050118009CFFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881DAED322050118009CFFBC /* Main.storyboard */; };
+		881DAED822050118009CFFBC /* Consubanco.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 881DAED622050118009CFFBC /* Consubanco.xcdatamodeld */; };
+		881DAEDA2205011A009CFFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881DAED92205011A009CFFBC /* Assets.xcassets */; };
+		881DAEDD2205011A009CFFBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881DAEDB2205011A009CFFBC /* LaunchScreen.storyboard */; };
+		881DAEE82205011A009CFFBC /* ConsubancoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DAEE72205011A009CFFBC /* ConsubancoTests.swift */; };
+		881DAEF32205011A009CFFBC /* ConsubancoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DAEF22205011A009CFFBC /* ConsubancoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		881DAEE42205011A009CFFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881DAEC422050118009CFFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881DAECB22050118009CFFBC;
+			remoteInfo = Consubanco;
+		};
+		881DAEEF2205011A009CFFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881DAEC422050118009CFFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881DAECB22050118009CFFBC;
+			remoteInfo = Consubanco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		881DAECC22050118009CFFBC /* Consubanco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Consubanco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		881DAECF22050118009CFFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		881DAED122050118009CFFBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		881DAED422050118009CFFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		881DAED722050118009CFFBC /* Consubanco.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Consubanco.xcdatamodel; sourceTree = "<group>"; };
+		881DAED92205011A009CFFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		881DAEDC2205011A009CFFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		881DAEDE2205011A009CFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881DAEE32205011A009CFFBC /* ConsubancoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsubancoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		881DAEE72205011A009CFFBC /* ConsubancoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsubancoTests.swift; sourceTree = "<group>"; };
+		881DAEE92205011A009CFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881DAEEE2205011A009CFFBC /* ConsubancoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsubancoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		881DAEF22205011A009CFFBC /* ConsubancoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsubancoUITests.swift; sourceTree = "<group>"; };
+		881DAEF42205011A009CFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		881DAEC922050118009CFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881DAEE02205011A009CFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881DAEEB2205011A009CFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		881DAEC322050118009CFFBC = {
+			isa = PBXGroup;
+			children = (
+				881DAECE22050118009CFFBC /* Consubanco */,
+				881DAEE62205011A009CFFBC /* ConsubancoTests */,
+				881DAEF12205011A009CFFBC /* ConsubancoUITests */,
+				881DAECD22050118009CFFBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		881DAECD22050118009CFFBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				881DAECC22050118009CFFBC /* Consubanco.app */,
+				881DAEE32205011A009CFFBC /* ConsubancoTests.xctest */,
+				881DAEEE2205011A009CFFBC /* ConsubancoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		881DAECE22050118009CFFBC /* Consubanco */ = {
+			isa = PBXGroup;
+			children = (
+				881DAECF22050118009CFFBC /* AppDelegate.swift */,
+				881DAED122050118009CFFBC /* ViewController.swift */,
+				881DAED322050118009CFFBC /* Main.storyboard */,
+				881DAED92205011A009CFFBC /* Assets.xcassets */,
+				881DAEDB2205011A009CFFBC /* LaunchScreen.storyboard */,
+				881DAEDE2205011A009CFFBC /* Info.plist */,
+				881DAED622050118009CFFBC /* Consubanco.xcdatamodeld */,
+			);
+			path = Consubanco;
+			sourceTree = "<group>";
+		};
+		881DAEE62205011A009CFFBC /* ConsubancoTests */ = {
+			isa = PBXGroup;
+			children = (
+				881DAEE72205011A009CFFBC /* ConsubancoTests.swift */,
+				881DAEE92205011A009CFFBC /* Info.plist */,
+			);
+			path = ConsubancoTests;
+			sourceTree = "<group>";
+		};
+		881DAEF12205011A009CFFBC /* ConsubancoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				881DAEF22205011A009CFFBC /* ConsubancoUITests.swift */,
+				881DAEF42205011A009CFFBC /* Info.plist */,
+			);
+			path = ConsubancoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		881DAECB22050118009CFFBC /* Consubanco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881DAEF72205011A009CFFBC /* Build configuration list for PBXNativeTarget "Consubanco" */;
+			buildPhases = (
+				881DAEC822050118009CFFBC /* Sources */,
+				881DAEC922050118009CFFBC /* Frameworks */,
+				881DAECA22050118009CFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Consubanco;
+			productName = Consubanco;
+			productReference = 881DAECC22050118009CFFBC /* Consubanco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		881DAEE22205011A009CFFBC /* ConsubancoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881DAEFA2205011A009CFFBC /* Build configuration list for PBXNativeTarget "ConsubancoTests" */;
+			buildPhases = (
+				881DAEDF2205011A009CFFBC /* Sources */,
+				881DAEE02205011A009CFFBC /* Frameworks */,
+				881DAEE12205011A009CFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				881DAEE52205011A009CFFBC /* PBXTargetDependency */,
+			);
+			name = ConsubancoTests;
+			productName = ConsubancoTests;
+			productReference = 881DAEE32205011A009CFFBC /* ConsubancoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		881DAEED2205011A009CFFBC /* ConsubancoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881DAEFD2205011A009CFFBC /* Build configuration list for PBXNativeTarget "ConsubancoUITests" */;
+			buildPhases = (
+				881DAEEA2205011A009CFFBC /* Sources */,
+				881DAEEB2205011A009CFFBC /* Frameworks */,
+				881DAEEC2205011A009CFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				881DAEF02205011A009CFFBC /* PBXTargetDependency */,
+			);
+			name = ConsubancoUITests;
+			productName = ConsubancoUITests;
+			productReference = 881DAEEE2205011A009CFFBC /* ConsubancoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		881DAEC422050118009CFFBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Gonet;
+				TargetAttributes = {
+					881DAECB22050118009CFFBC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					881DAEE22205011A009CFFBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 881DAECB22050118009CFFBC;
+					};
+					881DAEED2205011A009CFFBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 881DAECB22050118009CFFBC;
+					};
+				};
+			};
+			buildConfigurationList = 881DAEC722050118009CFFBC /* Build configuration list for PBXProject "Consubanco" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 881DAEC322050118009CFFBC;
+			productRefGroup = 881DAECD22050118009CFFBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				881DAECB22050118009CFFBC /* Consubanco */,
+				881DAEE22205011A009CFFBC /* ConsubancoTests */,
+				881DAEED2205011A009CFFBC /* ConsubancoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		881DAECA22050118009CFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881DAEDD2205011A009CFFBC /* LaunchScreen.storyboard in Resources */,
+				881DAEDA2205011A009CFFBC /* Assets.xcassets in Resources */,
+				881DAED522050118009CFFBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881DAEE12205011A009CFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881DAEEC2205011A009CFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		881DAEC822050118009CFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881DAED222050118009CFFBC /* ViewController.swift in Sources */,
+				881DAED822050118009CFFBC /* Consubanco.xcdatamodeld in Sources */,
+				881DAED022050118009CFFBC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881DAEDF2205011A009CFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881DAEE82205011A009CFFBC /* ConsubancoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881DAEEA2205011A009CFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881DAEF32205011A009CFFBC /* ConsubancoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		881DAEE52205011A009CFFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 881DAECB22050118009CFFBC /* Consubanco */;
+			targetProxy = 881DAEE42205011A009CFFBC /* PBXContainerItemProxy */;
+		};
+		881DAEF02205011A009CFFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 881DAECB22050118009CFFBC /* Consubanco */;
+			targetProxy = 881DAEEF2205011A009CFFBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		881DAED322050118009CFFBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881DAED422050118009CFFBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		881DAEDB2205011A009CFFBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881DAEDC2205011A009CFFBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		881DAEF52205011A009CFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		881DAEF62205011A009CFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		881DAEF82205011A009CFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Consubanco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gonet.Consubanco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		881DAEF92205011A009CFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Consubanco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gonet.Consubanco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		881DAEFB2205011A009CFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConsubancoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gonet.ConsubancoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Consubanco.app/Consubanco";
+			};
+			name = Debug;
+		};
+		881DAEFC2205011A009CFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConsubancoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gonet.ConsubancoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Consubanco.app/Consubanco";
+			};
+			name = Release;
+		};
+		881DAEFE2205011A009CFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConsubancoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gonet.ConsubancoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Consubanco;
+			};
+			name = Debug;
+		};
+		881DAEFF2205011A009CFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConsubancoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gonet.ConsubancoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Consubanco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		881DAEC722050118009CFFBC /* Build configuration list for PBXProject "Consubanco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881DAEF52205011A009CFFBC /* Debug */,
+				881DAEF62205011A009CFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881DAEF72205011A009CFFBC /* Build configuration list for PBXNativeTarget "Consubanco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881DAEF82205011A009CFFBC /* Debug */,
+				881DAEF92205011A009CFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881DAEFA2205011A009CFFBC /* Build configuration list for PBXNativeTarget "ConsubancoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881DAEFB2205011A009CFFBC /* Debug */,
+				881DAEFC2205011A009CFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881DAEFD2205011A009CFFBC /* Build configuration list for PBXNativeTarget "ConsubancoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881DAEFE2205011A009CFFBC /* Debug */,
+				881DAEFF2205011A009CFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		881DAED622050118009CFFBC /* Consubanco.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				881DAED722050118009CFFBC /* Consubanco.xcdatamodel */,
+			);
+			currentVersion = 881DAED722050118009CFFBC /* Consubanco.xcdatamodel */;
+			path = Consubanco.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 881DAEC422050118009CFFBC /* Project object */;
+}
