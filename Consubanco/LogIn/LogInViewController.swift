@@ -72,6 +72,14 @@ class LogInViewController: UIViewController {
         
     }
     
+    @IBAction func infoButtonAction(_ sender: UIButton) {
+        
+        alertGeneral(errorDescrip: "user - password :123, admin- password: 123", information: "Acceso")
+        
+        
+    }
+    
+    
     // MARK: Alerts
     func alertGeneral(errorDescrip:String, information: String) {
 

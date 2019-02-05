@@ -42,6 +42,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-en-lak">
+                                <rect key="frame" x="503" y="559" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="infoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jEw-5d-28O"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -65,7 +72,7 @@
         <!--Agenda-->
         <scene sceneID="IgQ-0L-E0U">
             <objects>
-                <viewController id="yK2-Lq-zLB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AgendaViewController" id="yK2-Lq-zLB" customClass="AgendaViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5qI-1Q-IOy">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +84,9 @@
                                 <rect key="frame" x="181" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="yK2-Lq-zLB" eventType="touchUpInside" id="BPr-tk-3HO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,7 +107,7 @@
         <!--New-->
         <scene sceneID="T5K-YK-9ri">
             <objects>
-                <viewController id="Fed-9G-icR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewViewController" id="Fed-9G-icR" customClass="NewViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftQ-qv-N46">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +120,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Fed-9G-icR" eventType="touchUpInside" id="NoU-1W-q0r"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -174,7 +187,7 @@
         <!--Planning-->
         <scene sceneID="o3n-pF-Y3S">
             <objects>
-                <viewController id="3Rt-LX-4JN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlanningViewController" id="3Rt-LX-4JN" customClass="PlanningViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Kt-P9-ejf">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +199,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Boton_regresar"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="3Rt-LX-4JN" eventType="touchUpInside" id="D1E-Dy-gOE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -346,18 +362,21 @@
         <!--Portfolio-->
         <scene sceneID="sFe-2D-mKu">
             <objects>
-                <viewController id="ixw-fv-cwU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PortfolioViewController" id="ixw-fv-cwU" customClass="PortfolioViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dys-na-SdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaterialVentas" translatesAutoresizingMaskIntoConstraints="NO" id="2RV-a9-blp">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-nl-WlO">
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="yH7-ZV-6mc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-wb-AaC">
                                 <rect key="frame" x="49" y="146" width="180" height="223"/>
@@ -385,7 +404,7 @@
         <!--Library-->
         <scene sceneID="n6b-kg-T8i">
             <objects>
-                <viewController id="jZA-1s-OJJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LibraryViewController" id="jZA-1s-OJJ" customClass="LibraryViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lvk-nm-834">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -397,6 +416,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="jZA-1s-OJJ" eventType="touchUpInside" id="dcS-WI-8gV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -417,7 +439,7 @@
         <!--Performance-->
         <scene sceneID="Btc-MH-XPg">
             <objects>
-                <viewController id="59q-13-33J" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PerformanceViewController" id="59q-13-33J" customClass="PerformanceViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TW3-wv-FF2">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -429,6 +451,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="59q-13-33J" eventType="touchUpInside" id="6d5-e6-Idw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -449,7 +474,7 @@
         <!--Portfolio-->
         <scene sceneID="vUD-Vd-9hw">
             <objects>
-                <viewController id="2gD-gS-ym7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreditViewController" id="2gD-gS-ym7" customClass="CreditViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UAV-6D-mY0">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -461,6 +486,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
+                                <connections>
+                                    <segue destination="ixw-fv-cwU" kind="show" id="DLD-is-VmI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -572,4 +600,7 @@
         <image name="rechazados" width="33" height="32"/>
         <image name="ventas" width="39.5" height="33.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DLD-is-VmI"/>
+    </inferredMetricsTieBreakers>
 </document>
