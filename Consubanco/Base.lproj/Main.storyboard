@@ -88,7 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M2h-lt-wTA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Agenda" image="icon_Agenda" id="ljM-ap-vsI"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Agenda" image="icon_Agenda" id="ljM-ap-vsI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3O-62-MtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +115,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Heo-Qh-IkR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New" image="icon_Nuevos" id="gOl-Pt-xir"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="New" image="icon_Nuevos" id="gOl-Pt-xir"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wro-dJ-zxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="2481" y="842"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--UserUI Tab Bar Controller-->
         <scene sceneID="9fj-LA-cvU">
             <objects>
-                <tabBarController storyboardIdentifier="UserTabBar" automaticallyAdjustsScrollViewInsets="NO" id="rji-tw-udb" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UserUITabBarController" automaticallyAdjustsScrollViewInsets="NO" id="rji-tw-udb" customClass="UserUITabBarController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXk-2I-l11">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -410,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfx-h3-vGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3226" y="11"/>
+            <point key="canvasLocation" x="3278" y="23"/>
         </scene>
         <!--Performance-->
         <scene sceneID="Btc-MH-XPg">
@@ -441,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2d-Lo-qxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3226" y="841"/>
+            <point key="canvasLocation" x="3278" y="857"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="vUD-Vd-9hw">
@@ -489,6 +489,48 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku1-E9-cAi">
+                                <rect key="frame" x="148" y="202" width="130" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="agentaButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="7ds-Fl-71J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2So-Xd-Q8m">
+                                <rect key="frame" x="439" y="202" width="130" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="activitiesButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="kCu-Wk-mxH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dc-AM-7bS">
+                                <rect key="frame" x="735" y="202" width="130" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="planningButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="R7f-ud-f3T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-0R-Iju">
+                                <rect key="frame" x="154" y="435" width="130" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="portfolioButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="2qc-5W-ZuQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQw-fe-REq">
+                                <rect key="frame" x="445" y="435" width="149" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="libraryButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="WVa-YC-VhR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDY-w2-HRb">
+                                <rect key="frame" x="741" y="435" width="152" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="performanceButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="BrV-sI-MLA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -503,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVc-f4-CNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="-745"/>
+            <point key="canvasLocation" x="833.7890625" y="-745.3125"/>
         </scene>
     </scenes>
     <resources>

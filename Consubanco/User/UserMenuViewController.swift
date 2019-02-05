@@ -10,21 +10,75 @@ import UIKit
 
 class UserMenuViewController: UIViewController {
 
+    
+    var tab = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func agentaButtonAction(_ sender: UIButton) {
+    
+        selectTab(tab: 0)
+        
     }
-    */
+    
+    @IBAction func activitiesButtonAction(_ sender: UIButton) {
+        
+        selectTab(tab: 1)
 
+    }
+    
+    @IBAction func planningButtonAction(_ sender: UIButton) {
+    
+        selectTab(tab: 2)
+
+    }
+    
+    @IBAction func portfolioButtonAction(_ sender: UIButton) {
+        
+        selectTab(tab: 3)
+
+    }
+    
+    @IBAction func libraryButtonAction(_ sender: UIButton) {
+    
+        selectTab(tab: 4)
+
+    }
+    
+    @IBAction func performanceButtonAction(_ sender: UIButton) {
+        
+        selectTab(tab: 5)
+
+    }
+    
+    
+    
+    func selectTab(tab: Int)  {
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        let nextVC = storyboard.instantiateViewController(withIdentifier: "UserUITabBarController") as! UserUITabBarController
+        
+        nextVC.selectedIndex = tab
+        
+        present(nextVC, animated: true, completion: nil)
+        
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if segue.identifier == "UserUITabBarController" {
+//            if let destVC = segue.destination as? UserUITabBarController {
+//                destVC.selectedIndex = 2
+//            }
+//        }
+//    }
+    
+    
+
+   
 }
