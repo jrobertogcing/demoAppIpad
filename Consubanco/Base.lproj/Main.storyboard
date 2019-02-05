@@ -596,6 +596,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bX5-LG-4b5"/>
                     <connections>
+                        <outlet property="logInScrollView" destination="4xS-SN-z4k" id="Jnc-MN-IaN"/>
                         <outlet property="passwordTextField" destination="STj-Kd-9jX" id="I62-An-8z3"/>
                         <outlet property="userTextField" destination="gnJ-AE-DmL" id="68g-yB-jdx"/>
                     </connections>

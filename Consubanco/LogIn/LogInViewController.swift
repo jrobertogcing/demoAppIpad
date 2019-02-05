@@ -8,12 +8,13 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var userTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var logInScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +22,15 @@ class LogInViewController: UIViewController {
         userTextField.text = ""
         passwordTextField.text = ""
         
-
+        userTextField.delegate = self
+        passwordTextField.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
+    //MARK: Keyboard activity
+    
+    // Activate return button in keyboard
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.navigationBar.isHidden = true
@@ -32,6 +38,30 @@ class LogInViewController: UIViewController {
 
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+
+    }
+    
+    // Move up scrollView when keyboard appear
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+     
+        logInScrollView.setContentOffset(CGPoint(x: 0, y: 180), animated: true)
+
+        
+    }
+    
+    // Move down scrollView when keyboard dissappear
+
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        
+        logInScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+
+    }
+    
+    //MARK: LogInButton Action
     @IBAction func logInbuttonAction(_ sender: UIButton) {
         
         // Verifica si los campos de texto usuario y password han sido capturados.
@@ -68,10 +98,16 @@ class LogInViewController: UIViewController {
             
             self.present(userVC, animated:true, completion:nil)
             
+        } else {
+            
+            alertGeneral(errorDescrip: "Datos incorrectos", information: "Información")
+            
+            
         }
         
     }
     
+    //MARK: Info button Action
     @IBAction func infoButtonAction(_ sender: UIButton) {
         
         alertGeneral(errorDescrip: "user - password :123, admin- password: 123", information: "Acceso")
