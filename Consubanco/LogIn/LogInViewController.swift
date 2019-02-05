@@ -64,7 +64,7 @@ class LogInViewController: UIViewController {
         } else if userName == "user" && passwordText == "123"{
             
             
-            let userVC = storyboard.instantiateViewController(withIdentifier: "UserTabBar")
+            let userVC = storyboard.instantiateViewController(withIdentifier: "UserMenuViewController") as! UserMenuViewController
             
             self.present(userVC, animated:true, completion:nil)
             

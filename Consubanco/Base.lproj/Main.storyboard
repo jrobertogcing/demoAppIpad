@@ -73,9 +73,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agenda" translatesAutoresizingMaskIntoConstraints="NO" id="nNP-sK-ld2">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-0L-c2Y">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-0L-c2Y">
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Boton_salir"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -173,7 +174,7 @@
         <!--Planning-->
         <scene sceneID="o3n-pF-Y3S">
             <objects>
-                <viewController storyboardIdentifier="UserMenuViewController" id="3Rt-LX-4JN" customClass="UserMenuViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Rt-LX-4JN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Kt-P9-ejf">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,6 +209,7 @@
                 <tabBarController storyboardIdentifier="UserTabBar" automaticallyAdjustsScrollViewInsets="NO" id="rji-tw-udb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXk-2I-l11">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -230,6 +232,7 @@
                 <tabBarController storyboardIdentifier="AdminTabBar" automaticallyAdjustsScrollViewInsets="NO" id="Oz4-dA-2Od" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eGV-ct-BBw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -376,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GC6-kI-m3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3225.5859375" y="-759.375"/>
+            <point key="canvasLocation" x="3278" y="-705"/>
         </scene>
         <!--Library-->
         <scene sceneID="n6b-kg-T8i">
@@ -471,6 +474,37 @@
             </objects>
             <point key="canvasLocation" x="4046" y="-759"/>
         </scene>
+        <!--Portfolio-->
+        <scene sceneID="K7m-2o-Jcx">
+            <objects>
+                <viewController storyboardIdentifier="UserMenuViewController" id="WfE-Yi-ImE" customClass="UserMenuViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U81-Pc-Ldn">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuHSBC" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-br-9WH">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIE-uV-Hmu">
+                                <rect key="frame" x="180" y="22" width="123" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2cR-br-9WH" firstAttribute="top" secondItem="U81-Pc-Ldn" secondAttribute="top" id="CcG-0F-cJZ"/>
+                            <constraint firstItem="2cR-br-9WH" firstAttribute="bottom" secondItem="u34-BD-SrV" secondAttribute="bottom" id="Exj-Sm-GRm"/>
+                            <constraint firstItem="2cR-br-9WH" firstAttribute="trailing" secondItem="u34-BD-SrV" secondAttribute="trailing" id="teE-GT-Nbw"/>
+                            <constraint firstItem="2cR-br-9WH" firstAttribute="leading" secondItem="u34-BD-SrV" secondAttribute="leading" id="yDG-y7-Z6S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u34-BD-SrV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Portfolio" image="ventas" id="LCo-dJ-WjP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVc-f4-CNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="-745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Boton_salir" width="123" height="38"/>
@@ -484,6 +518,7 @@
         <image name="icon_Nuevos" width="39.5" height="33.5"/>
         <image name="icon_Productividad" width="34" height="32"/>
         <image name="login" width="1024" height="768"/>
+        <image name="menuHSBC" width="1024" height="768"/>
         <image name="nuevos" width="1024" height="768"/>
         <image name="planning" width="1024" height="768"/>
         <image name="productividad" width="1024" height="768"/>
