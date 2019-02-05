@@ -1,14 +1,14 @@
 //
-//  AdminMenuViewController.swift
+//  DigitalizadosViewController.swift
 //  Consubanco
 //
-//  Created by Jose González on 2/4/19.
+//  Created by Jose González on 2/5/19.
 //  Copyright © 2019 Gonet. All rights reserved.
 //
 
 import UIKit
 
-class AdminMenuViewController: UIViewController {
+class DigitalizadosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,6 @@ class AdminMenuViewController: UIViewController {
         present(logInVC, animated: true, completion: nil)
         
         
-        
     }
     
-
 }

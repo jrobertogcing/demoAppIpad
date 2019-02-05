@@ -26,6 +26,9 @@
 		88C42779220A024300AA3E4B /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C42778220A024300AA3E4B /* LibraryViewController.swift */; };
 		88C4277B220A025A00AA3E4B /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4277A220A025A00AA3E4B /* CreditViewController.swift */; };
 		88C4277D220A026F00AA3E4B /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4277C220A026F00AA3E4B /* PerformanceViewController.swift */; };
+		88C42780220A423100AA3E4B /* AprobadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4277F220A423100AA3E4B /* AprobadosViewController.swift */; };
+		88C42782220A424500AA3E4B /* RechazadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C42781220A424500AA3E4B /* RechazadosViewController.swift */; };
+		88C42784220A425700AA3E4B /* DigitalizadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C42783220A425700AA3E4B /* DigitalizadosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		88C42778220A024300AA3E4B /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		88C4277A220A025A00AA3E4B /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		88C4277C220A026F00AA3E4B /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		88C4277F220A423100AA3E4B /* AprobadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprobadosViewController.swift; sourceTree = "<group>"; };
+		88C42781220A424500AA3E4B /* RechazadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechazadosViewController.swift; sourceTree = "<group>"; };
+		88C42783220A425700AA3E4B /* DigitalizadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalizadosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				88C4276A2208C5B200AA3E4B /* AdminMenuViewController.swift */,
+				88C4277F220A423100AA3E4B /* AprobadosViewController.swift */,
+				88C42781220A424500AA3E4B /* RechazadosViewController.swift */,
+				88C42783220A425700AA3E4B /* DigitalizadosViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -317,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C427662208BBBE00AA3E4B /* LogInViewController.swift in Sources */,
+				88C42784220A425700AA3E4B /* DigitalizadosViewController.swift in Sources */,
 				881DAED222050118009CFFBC /* ViewController.swift in Sources */,
 				881DAED822050118009CFFBC /* Consubanco.xcdatamodeld in Sources */,
 				88C4277D220A026F00AA3E4B /* PerformanceViewController.swift in Sources */,
@@ -326,7 +336,9 @@
 				88C427692208C4DA00AA3E4B /* UserMenuViewController.swift in Sources */,
 				88C4276F2209F56700AA3E4B /* UserUITabBarController.swift in Sources */,
 				88C4276B2208C5B200AA3E4B /* AdminMenuViewController.swift in Sources */,
+				88C42780220A423100AA3E4B /* AprobadosViewController.swift in Sources */,
 				88C42777220A022700AA3E4B /* PortfolioViewController.swift in Sources */,
+				88C42782220A424500AA3E4B /* RechazadosViewController.swift in Sources */,
 				88C4277B220A025A00AA3E4B /* CreditViewController.swift in Sources */,
 				88C42779220A024300AA3E4B /* LibraryViewController.swift in Sources */,
 				88C42775220A020C00AA3E4B /* PlanningViewController.swift in Sources */,

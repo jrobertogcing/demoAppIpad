@@ -90,6 +90,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_salir"/>
+                                <connections>
+                                    <action selector="salirButtonAction:" destination="0VY-EC-Fa3" eventType="touchUpInside" id="EEr-QT-dET"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,7 +210,7 @@
         <!--Cred. Aprobados-->
         <scene sceneID="Z1c-6O-w1b">
             <objects>
-                <viewController id="JfN-J2-zNb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AprobadosViewController" id="JfN-J2-zNb" customClass="AprobadosViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bY-un-fdi">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,6 +222,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Boton_salir"/>
+                                <connections>
+                                    <action selector="salirButtonAction:" destination="JfN-J2-zNb" eventType="touchUpInside" id="Aj7-Fj-Ngv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -239,7 +245,7 @@
         <!--Cred. Rechazados-->
         <scene sceneID="A7E-Q2-Ey7">
             <objects>
-                <viewController id="02v-qs-2LK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RechazadosViewController" id="02v-qs-2LK" customClass="RechazadosViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mdw-Iq-sGr">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,6 +257,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Boton_salir"/>
+                                <connections>
+                                    <action selector="salirButtonAction:" destination="02v-qs-2LK" eventType="touchUpInside" id="yJB-87-byQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -271,7 +280,7 @@
         <!--Digitalizados-->
         <scene sceneID="Cqn-ax-Qpw">
             <objects>
-                <viewController id="58X-uq-yx4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DigitalizadosViewController" id="58X-uq-yx4" customClass="DigitalizadosViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KuO-4f-oIf">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,6 +292,9 @@
                                 <rect key="frame" x="180" y="22" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_salir"/>
+                                <connections>
+                                    <action selector="salirButtonAction:" destination="58X-uq-yx4" eventType="touchUpInside" id="MNj-Xs-VWa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -523,7 +535,7 @@
         <!--Log In View Controller-->
         <scene sceneID="kc9-g1-5CN">
             <objects>
-                <viewController id="9QL-sa-MGe" customClass="LogInViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="9QL-sa-MGe" customClass="LogInViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w5G-cw-gVG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
