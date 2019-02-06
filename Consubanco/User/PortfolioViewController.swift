@@ -73,7 +73,7 @@ class PortfolioViewController: UIViewController {
     
     @IBAction func pdfWebViewButtonAction(_ sender: UIButton) {
         
-        playVideo3()
+    playVideo3()
 
     }
     
@@ -86,9 +86,10 @@ class PortfolioViewController: UIViewController {
     
     //MARK: Play Video function
     
+    //Prueba
     func playVideo () {
         
-        guard let path = Bundle.main.path(forResource: "promoHSBC720", ofType:"mp4") else {
+        guard let path = Bundle.main.path(forResource: "RegistroConsubanco", ofType:"mp4") else {
             debugPrint("video not found")
             return
         }
@@ -102,7 +103,7 @@ class PortfolioViewController: UIViewController {
         
     }
     
-    
+    // Prueba
     func playVideo2() {
        
         let videoURL = NSURL(string: "https://static.videokart.ir/clip/100/480.mp4")
@@ -122,9 +123,10 @@ class PortfolioViewController: UIViewController {
         
     }
     
+    //Funcionando
     func playVideo3()  {
         
-        guard let path = Bundle.main.path(forResource: "promoHSBC720", ofType:"mp4") else {
+        guard let path = Bundle.main.path(forResource: "RegistroConsubanco", ofType:"mp4") else {
             debugPrint("video not found")
             return
         }
