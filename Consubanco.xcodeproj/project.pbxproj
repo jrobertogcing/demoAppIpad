@@ -29,6 +29,7 @@
 		88C42780220A423100AA3E4B /* AprobadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4277F220A423100AA3E4B /* AprobadosViewController.swift */; };
 		88C42782220A424500AA3E4B /* RechazadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C42781220A424500AA3E4B /* RechazadosViewController.swift */; };
 		88C42784220A425700AA3E4B /* DigitalizadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C42783220A425700AA3E4B /* DigitalizadosViewController.swift */; };
+		88C42786220A563000AA3E4B /* informeCSB.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88C42785220A563000AA3E4B /* informeCSB.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		88C4277F220A423100AA3E4B /* AprobadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprobadosViewController.swift; sourceTree = "<group>"; };
 		88C42781220A424500AA3E4B /* RechazadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechazadosViewController.swift; sourceTree = "<group>"; };
 		88C42783220A425700AA3E4B /* DigitalizadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalizadosViewController.swift; sourceTree = "<group>"; };
+		88C42785220A563000AA3E4B /* informeCSB.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = informeCSB.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				881DAECF22050118009CFFBC /* AppDelegate.swift */,
+				88C42785220A563000AA3E4B /* informeCSB.pdf */,
 				88C427672208BBD400AA3E4B /* LogIn */,
 				88C4276D2208C5CB00AA3E4B /* Admin */,
 				88C4276C2208C5C000AA3E4B /* User */,
@@ -300,6 +303,7 @@
 			files = (
 				881DAEDD2205011A009CFFBC /* LaunchScreen.storyboard in Resources */,
 				881DAEDA2205011A009CFFBC /* Assets.xcassets in Resources */,
+				88C42786220A563000AA3E4B /* informeCSB.pdf in Resources */,
 				881DAED522050118009CFFBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

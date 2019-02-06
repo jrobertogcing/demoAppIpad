@@ -69,16 +69,20 @@ class UserMenuViewController: UIViewController {
         
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if segue.identifier == "UserUITabBarController" {
-//            if let destVC = segue.destination as? UserUITabBarController {
-//                destVC.selectedIndex = 2
-//            }
-//        }
-//    }
+//MARK salir Button Action
+    
+    @IBAction func salirButtonAction(_ sender: UIButton) {
+        
+        let storyboar = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        let logInVC = storyboar.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+        
+        present(logInVC, animated: true, completion: nil)
+        
+        
+    }
     
     
-
+    
    
 }
