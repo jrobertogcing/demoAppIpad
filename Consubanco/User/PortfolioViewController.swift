@@ -8,11 +8,15 @@
 
 import UIKit
 import PDFKit
-
+import AVKit
+import MediaPlayer
 
 class PortfolioViewController: UIViewController {
 
     let pdfView = PDFView()
+    var player: AVPlayer?
+
+    var playerController = AVPlayerViewController()
 
     
     override func viewDidLoad() {
@@ -69,15 +73,76 @@ class PortfolioViewController: UIViewController {
     
     @IBAction func pdfWebViewButtonAction(_ sender: UIButton) {
         
-        
+        playVideo3()
+
     }
     
+    //MARK: Remove PDFView
     @objc func buttonAction (sender: UIButton!) {
         
       //  self.view.removeFromSuperview()
         self.pdfView.removeFromSuperview()
     }
     
+    //MARK: Play Video function
+    
+    func playVideo () {
+        
+        guard let path = Bundle.main.path(forResource: "promoHSBC720", ofType:"mp4") else {
+            debugPrint("video not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+
+        present(playerController, animated: true) {
+            player.play()
+        }
+        
+    }
+    
+    
+    func playVideo2() {
+       
+        let videoURL = NSURL(string: "https://static.videokart.ir/clip/100/480.mp4")
+        player = AVPlayer(url: videoURL! as URL)
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        self.addChild(playerController)
+        
+        // Add your view Frame
+        playerController.view.frame = self.view.frame
+        
+        // Add subview in your view
+        self.view.addSubview(playerController.view)
+        
+        player?.play()
+        
+        
+    }
+    
+    func playVideo3()  {
+        
+        guard let path = Bundle.main.path(forResource: "promoHSBC720", ofType:"mp4") else {
+            debugPrint("video not found")
+            return
+        }
+        
+        let videoURL = URL(fileURLWithPath: path)
+        
+        let player = AVPlayer(url: videoURL)
+        let playerVC = AVPlayerViewController()
+        playerVC.player = player
+        
+        self.present(playerVC, animated: true){
+            
+            playerVC.player?.play()
+        }
+        
+        
+        
+    }
     
     //MARK: Back button action
     @IBAction func backButtonAction(_ sender: UIButton) {

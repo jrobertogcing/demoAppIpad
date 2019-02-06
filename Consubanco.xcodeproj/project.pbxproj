@@ -15,6 +15,7 @@
 		881DAEDD2205011A009CFFBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881DAEDB2205011A009CFFBC /* LaunchScreen.storyboard */; };
 		881DAEE82205011A009CFFBC /* ConsubancoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DAEE72205011A009CFFBC /* ConsubancoTests.swift */; };
 		881DAEF32205011A009CFFBC /* ConsubancoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DAEF22205011A009CFFBC /* ConsubancoUITests.swift */; };
+		88BCAFCA220B4F8600132D13 /* promoHSBC720.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88BCAFC9220B4C4200132D13 /* promoHSBC720.mp4 */; };
 		88C427662208BBBE00AA3E4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C427652208BBBE00AA3E4B /* LogInViewController.swift */; };
 		88C427692208C4DA00AA3E4B /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C427682208C4DA00AA3E4B /* UserMenuViewController.swift */; };
 		88C4276B2208C5B200AA3E4B /* AdminMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4276A2208C5B200AA3E4B /* AdminMenuViewController.swift */; };
@@ -64,6 +65,7 @@
 		881DAEEE2205011A009CFFBC /* ConsubancoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsubancoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		881DAEF22205011A009CFFBC /* ConsubancoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsubancoUITests.swift; sourceTree = "<group>"; };
 		881DAEF42205011A009CFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BCAFC9220B4C4200132D13 /* promoHSBC720.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = promoHSBC720.mp4; sourceTree = "<group>"; };
 		88C427652208BBBE00AA3E4B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		88C427682208C4DA00AA3E4B /* UserMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		88C4276A2208C5B200AA3E4B /* AdminMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMenuViewController.swift; sourceTree = "<group>"; };
@@ -131,12 +133,12 @@
 			children = (
 				881DAECF22050118009CFFBC /* AppDelegate.swift */,
 				88C42785220A563000AA3E4B /* informeCSB.pdf */,
+				88BCAFC9220B4C4200132D13 /* promoHSBC720.mp4 */,
 				88C427672208BBD400AA3E4B /* LogIn */,
 				88C4276D2208C5CB00AA3E4B /* Admin */,
 				88C4276C2208C5C000AA3E4B /* User */,
 				881DAED122050118009CFFBC /* ViewController.swift */,
 				881DAED322050118009CFFBC /* Main.storyboard */,
-				88C4276E2209F56700AA3E4B /* UserUITabBarController.swift */,
 				881DAED92205011A009CFFBC /* Assets.xcassets */,
 				881DAEDB2205011A009CFFBC /* LaunchScreen.storyboard */,
 				881DAEDE2205011A009CFFBC /* Info.plist */,
@@ -174,6 +176,7 @@
 		88C4276C2208C5C000AA3E4B /* User */ = {
 			isa = PBXGroup;
 			children = (
+				88C4276E2209F56700AA3E4B /* UserUITabBarController.swift */,
 				88C427682208C4DA00AA3E4B /* UserMenuViewController.swift */,
 				88C42770220A01E000AA3E4B /* AgendaViewController.swift */,
 				88C42772220A01F200AA3E4B /* NewViewController.swift */,
@@ -301,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BCAFCA220B4F8600132D13 /* promoHSBC720.mp4 in Resources */,
 				881DAEDD2205011A009CFFBC /* LaunchScreen.storyboard in Resources */,
 				881DAEDA2205011A009CFFBC /* Assets.xcassets in Resources */,
 				88C42786220A563000AA3E4B /* informeCSB.pdf in Resources */,
