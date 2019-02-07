@@ -13,16 +13,26 @@ import MediaPlayer
 
 class PortfolioViewController: UIViewController {
 
+    //Outlet
+    
+    @IBOutlet weak var VideoUIImageView: UIImageView!
+    
+    //Variables
     let pdfView = PDFView()
     var player: AVPlayer?
+    var flagVideo:String = ""
+    var flagVideoInit:String = ""
+
+
 
     var playerController = AVPlayerViewController()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        //Variables to know if the video is already init and running.
+        flagVideo = "stop"
+        flagVideoInit = "none"
     }
     
     //MARK: PDF
@@ -66,16 +76,24 @@ class PortfolioViewController: UIViewController {
             //pdfView.displaysAsBook = true
         }
         
-       
     }
     
     //MARK: PDF second option
     
-    @IBAction func pdfWebViewButtonAction(_ sender: UIButton) {
+   
+    
+    @IBAction func playVideoButtonAction(_ sender: UIButton) {
         
-    playVideo3()
+        playVideo4()
 
+        
     }
+    
+    @IBAction func playVideoFullButtonAction(_ sender: UIButton) {
+        
+        playVideo3()
+    }
+    
     
     //MARK: Remove PDFView
     @objc func buttonAction (sender: UIButton!) {
@@ -120,10 +138,9 @@ class PortfolioViewController: UIViewController {
         
         player?.play()
         
-        
     }
     
-    //Funcionando
+    //Funcionando en pantalla Completa
     func playVideo3()  {
         
         guard let path = Bundle.main.path(forResource: "RegistroConsubanco", ofType:"mp4") else {
@@ -141,9 +158,43 @@ class PortfolioViewController: UIViewController {
             
             playerVC.player?.play()
         }
+    }
+    
+    //Funcionando en UIImageView
+    func playVideo4(){
         
+        if flagVideoInit == "none"{
+            
+            flagVideoInit = "init"
+
+            guard let path = Bundle.main.path(forResource: "RegistroConsubanco", ofType:"mp4") else {
+                debugPrint("video not found")
+                return
+            }
+            
+            let videoURL = URL(fileURLWithPath: path)
+            
+            player = AVPlayer(url: videoURL) // your video url
+            let playerLayer = AVPlayerLayer(player: player)
+            
+            playerLayer.frame = VideoUIImageView.bounds
+            VideoUIImageView.layer.addSublayer(playerLayer)
         
-        
+        }
+   
+        if flagVideo == "stop" {
+            
+            flagVideo = "play"
+
+            player?.play()
+            
+        } else if flagVideo == "play" {
+            
+            flagVideo = "stop"
+
+            player?.pause()
+
+        }
     }
     
     //MARK: Back button action

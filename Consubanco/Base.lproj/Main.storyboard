@@ -331,7 +331,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-Fz-Z6Q">
-                                <rect key="frame" x="267" y="456" width="491" height="274"/>
+                                <rect key="frame" x="267" y="430" width="491" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISg-qY-wLh">
@@ -339,6 +339,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="PDFButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="LZR-Eg-d3V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgV-8t-pve">
+                                <rect key="frame" x="267" y="430" width="491" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="playVideoButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="on4-SA-JxW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-nl-WlO">
@@ -350,10 +357,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8Z-6g-OCR">
-                                <rect key="frame" x="462" y="553" width="100" height="78"/>
+                                <rect key="frame" x="543" y="146" width="189" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="pdfWebViewButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="nHS-aK-lFJ"/>
+                                    <action selector="playVideoFullButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="Vem-Pm-lkP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -367,6 +374,9 @@
                         <viewLayoutGuide key="safeArea" id="Mtv-nF-taN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Portfolio" image="ventas" id="hqs-M5-9r4"/>
+                    <connections>
+                        <outlet property="VideoUIImageView" destination="hGh-Fz-Z6Q" id="Pa8-cO-rfu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GC6-kI-m3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
