@@ -149,12 +149,8 @@ class PortfolioViewController: UIViewController {
     //MARK: Back button action
     @IBAction func backButtonAction(_ sender: UIButton) {
         
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        
-        let UserMenuVC = storyboard.instantiateViewController(withIdentifier: "UserMenuViewController") as! UserMenuViewController
-        
-        present(UserMenuVC, animated: true, completion: nil)
-        
+        self.navigationController?.popViewController(animated: true)
+
     }
     
 }

@@ -65,7 +65,10 @@ class UserMenuViewController: UIViewController {
         
         nextVC.selectedIndex = tab
         
-        present(nextVC, animated: true, completion: nil)
+       // present(nextVC, animated: true, completion: nil)
+        
+       navigationController?.pushViewController(nextVC, animated: true)
+
         
     }
     
@@ -73,13 +76,8 @@ class UserMenuViewController: UIViewController {
     
     @IBAction func salirButtonAction(_ sender: UIButton) {
         
-        let storyboar = UIStoryboard.init(name: "Main", bundle: nil)
-        
-        let logInVC = storyboar.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
-        
-        present(logInVC, animated: true, completion: nil)
-        
-        
+        self.navigationController?.popToRootViewController(animated: true)
+
     }
     
     

@@ -18,11 +18,8 @@ class AprobadosViewController: UIViewController {
     
     @IBAction func salirButtonAction(_ sender: UIButton) {
         
-        let storyboar = UIStoryboard.init(name: "Main", bundle: nil)
-        
-        let logInVC = storyboar.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
-        
-        present(logInVC, animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
+
     }
     
   

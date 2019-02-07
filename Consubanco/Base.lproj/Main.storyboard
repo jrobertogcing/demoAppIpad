@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3O-62-MtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="-744"/>
+            <point key="canvasLocation" x="3205.078125" y="-744.53125"/>
         </scene>
         <!--New-->
         <scene sceneID="T5K-YK-9ri">
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjv-Wf-cbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="842"/>
+            <point key="canvasLocation" x="2481" y="856"/>
         </scene>
         <!--UserUI Tab Bar Controller-->
         <scene sceneID="9fj-LA-cvU">
@@ -184,7 +184,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bu7-ea-eHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="-758"/>
+            <point key="canvasLocation" x="2397.0703125" y="-758.59375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ADP-3u-g6b">
@@ -288,6 +288,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="010productividad" translatesAutoresizingMaskIntoConstraints="NO" id="VoV-MV-VM9">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-VF-e8e">
+                                <rect key="frame" x="881" y="20" width="123" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Boton_salir"/>
+                                <connections>
+                                    <action selector="salirButtonAction:" destination="58X-uq-yx4" eventType="touchUpInside" id="8dG-Bs-hm2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -313,7 +321,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="07MaterialVentas3" translatesAutoresizingMaskIntoConstraints="NO" id="2RV-a9-blp">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-wb-AaC">
                                 <rect key="frame" x="49" y="146" width="180" height="269"/>
@@ -362,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GC6-kI-m3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3277.734375" y="-745.3125"/>
+            <point key="canvasLocation" x="4001.9531249999995" y="-745.3125"/>
         </scene>
         <!--Library-->
         <scene sceneID="n6b-kg-T8i">
@@ -450,7 +458,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
-                                    <segue destination="ixw-fv-cwU" kind="show" id="DLD-is-VmI"/>
+                                    <action selector="backButtonAction:" destination="2gD-gS-ym7" eventType="touchUpInside" id="4Zc-jz-gK6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -467,9 +475,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzW-ga-2OM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4046" y="-745"/>
+            <point key="canvasLocation" x="4770.1171875" y="-745.3125"/>
         </scene>
-        <!--Portfolio-->
+        <!--User Menu View Controller-->
         <scene sceneID="K7m-2o-Jcx">
             <objects>
                 <viewController storyboardIdentifier="UserMenuViewController" id="WfE-Yi-ImE" customClass="UserMenuViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
@@ -541,11 +549,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u34-BD-SrV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Portfolio" image="ventas" id="LCo-dJ-WjP"/>
+                    <navigationItem key="navigationItem" id="aWj-FP-6KL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVc-f4-CNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="-745"/>
+            <point key="canvasLocation" x="1608.984375" y="-745.3125"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="kc9-g1-5CN">
@@ -656,8 +664,4 @@
         <image name="rechazados" width="33" height="32"/>
         <image name="ventas" width="39.5" height="33.5"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="XNb-cQ-V93"/>
-        <segue reference="DLD-is-VmI"/>
-    </inferredMetricsTieBreakers>
 </document>

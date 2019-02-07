@@ -25,8 +25,20 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         userTextField.delegate = self
         passwordTextField.delegate = self
         
-        // Do any additional setup after loading the view.
+        
+        logInScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        userTextField.text = ""
+        passwordTextField.text = ""
+        
+        logInScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+
+    }
+    
     
     //MARK: Keyboard activity
     
@@ -88,15 +100,16 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
             
             let adminVC = storyboard.instantiateViewController(withIdentifier: "AdminTabBar")
             
-            self.present(adminVC, animated:true, completion:nil)
+            self.navigationController?.pushViewController(adminVC, animated: true)
 
             
         } else if userName == "user" && passwordText == "123"{
             
-            
             let userVC = storyboard.instantiateViewController(withIdentifier: "UserMenuViewController") as! UserMenuViewController
             
-            self.present(userVC, animated:true, completion:nil)
+          //  self.present(userVC, animated:true, completion:nil)
+
+            self.navigationController?.pushViewController(userVC, animated: true)
             
         } else {
             
