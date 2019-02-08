@@ -60,7 +60,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     // Move up scrollView when keyboard appear
     func textFieldDidBeginEditing(_ textField: UITextField) {
      
-        logInScrollView.setContentOffset(CGPoint(x: 0, y: 180), animated: true)
+        //Commented for ipad pro 12.9
+      //  logInScrollView.setContentOffset(CGPoint(x: 0, y: 180), animated: true)
 
         
     }
@@ -69,7 +70,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
 
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         
-        logInScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        //Commented for ipad pro 12.9
+        //logInScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
 
     }
     

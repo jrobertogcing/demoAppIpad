@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YPX-Dv-Ihx">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="AgendaViewController" id="yK2-Lq-zLB" customClass="AgendaViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5qI-1Q-IOy">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03agenda" translatesAutoresizingMaskIntoConstraints="NO" id="nNP-sK-ld2">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-0L-c2Y">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-0L-c2Y">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="yK2-Lq-zLB" eventType="touchUpInside" id="BPr-tk-3HO"/>
@@ -34,8 +33,10 @@
                         <constraints>
                             <constraint firstItem="nNP-sK-ld2" firstAttribute="top" secondItem="5qI-1Q-IOy" secondAttribute="top" id="5Dh-Zx-mcM"/>
                             <constraint firstItem="nNP-sK-ld2" firstAttribute="trailing" secondItem="M2h-lt-wTA" secondAttribute="trailing" id="5ab-7U-Xnc"/>
+                            <constraint firstItem="M2h-lt-wTA" firstAttribute="trailing" secondItem="4m7-0L-c2Y" secondAttribute="trailing" constant="20" id="J6e-fo-zmI"/>
                             <constraint firstItem="nNP-sK-ld2" firstAttribute="bottom" secondItem="M2h-lt-wTA" secondAttribute="bottom" id="LWu-7b-gMs"/>
                             <constraint firstItem="nNP-sK-ld2" firstAttribute="leading" secondItem="M2h-lt-wTA" secondAttribute="leading" id="OPy-7w-VM7"/>
+                            <constraint firstItem="4m7-0L-c2Y" firstAttribute="top" secondItem="M2h-lt-wTA" secondAttribute="top" id="tcE-X5-xEa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M2h-lt-wTA"/>
                     </view>
@@ -50,16 +51,14 @@
             <objects>
                 <viewController storyboardIdentifier="NewViewController" id="Fed-9G-icR" customClass="NewViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftQ-qv-N46">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="08nuevos" translatesAutoresizingMaskIntoConstraints="NO" id="Kja-WP-19O">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="08nuevos" translatesAutoresizingMaskIntoConstraints="NO" id="Kja-WP-19O">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDK-OQ-QW7">
-                                <rect key="frame" x="901" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDK-OQ-QW7">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="Fed-9G-icR" eventType="touchUpInside" id="NoU-1W-q0r"/>
@@ -67,28 +66,35 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Heo-Qh-IkR" firstAttribute="trailing" secondItem="XDK-OQ-QW7" secondAttribute="trailing" constant="20" id="JBP-Dc-3sU"/>
+                            <constraint firstItem="Kja-WP-19O" firstAttribute="top" secondItem="ftQ-qv-N46" secondAttribute="top" id="YvC-dv-ZDX"/>
+                            <constraint firstItem="Kja-WP-19O" firstAttribute="leading" secondItem="Heo-Qh-IkR" secondAttribute="leading" id="doQ-yb-Ir0"/>
+                            <constraint firstItem="XDK-OQ-QW7" firstAttribute="top" secondItem="Heo-Qh-IkR" secondAttribute="top" id="i1Q-ZZ-hiF"/>
+                            <constraint firstItem="Kja-WP-19O" firstAttribute="bottom" secondItem="Heo-Qh-IkR" secondAttribute="bottom" id="p8d-qn-1Ac"/>
+                            <constraint firstItem="Kja-WP-19O" firstAttribute="trailing" secondItem="Heo-Qh-IkR" secondAttribute="trailing" id="vbD-Oe-Yye"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Heo-Qh-IkR"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="New" image="icon_Nuevos" id="gOl-Pt-xir"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wro-dJ-zxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="11"/>
+            <point key="canvasLocation" x="2480.8199121522694" y="10.546875"/>
         </scene>
         <!--Productividad-->
         <scene sceneID="w4A-EN-PAe">
             <objects>
                 <viewController storyboardIdentifier="AdminMenuViewController" id="0VY-EC-Fa3" customClass="AdminMenuViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CFt-bE-2FK">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="010productividad" translatesAutoresizingMaskIntoConstraints="NO" id="jd7-eD-BSU">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsm-5L-Lea">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsm-5L-Lea">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_salir"/>
                                 <connections>
                                     <action selector="salirButtonAction:" destination="0VY-EC-Fa3" eventType="touchUpInside" id="EEr-QT-dET"/>
@@ -99,8 +105,10 @@
                         <constraints>
                             <constraint firstItem="jd7-eD-BSU" firstAttribute="top" secondItem="CFt-bE-2FK" secondAttribute="top" id="7hD-iT-3rg"/>
                             <constraint firstItem="jd7-eD-BSU" firstAttribute="trailing" secondItem="FMU-m9-4mz" secondAttribute="trailing" id="EpU-rz-uEq"/>
+                            <constraint firstItem="FMU-m9-4mz" firstAttribute="trailing" secondItem="Dsm-5L-Lea" secondAttribute="trailing" constant="20" id="H6S-Lm-Yol"/>
                             <constraint firstItem="jd7-eD-BSU" firstAttribute="bottom" secondItem="FMU-m9-4mz" secondAttribute="bottom" id="JXg-x6-od5"/>
                             <constraint firstItem="jd7-eD-BSU" firstAttribute="leading" secondItem="FMU-m9-4mz" secondAttribute="leading" id="dWJ-rb-i5c"/>
+                            <constraint firstItem="Dsm-5L-Lea" firstAttribute="top" secondItem="FMU-m9-4mz" secondAttribute="top" id="wQr-VR-maZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FMU-m9-4mz"/>
                     </view>
@@ -116,7 +124,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YPX-Dv-Ihx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aUU-kf-Qf9">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                        <rect key="frame" x="0.0" y="24" width="1366" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -133,16 +141,15 @@
             <objects>
                 <viewController storyboardIdentifier="PlanningViewController" id="3Rt-LX-4JN" customClass="PlanningViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Kt-P9-ejf">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="09planning" translatesAutoresizingMaskIntoConstraints="NO" id="D8Y-jF-yzo">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-IQ-qLY">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Boton_regresar"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-IQ-qLY">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
+                                <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="3Rt-LX-4JN" eventType="touchUpInside" id="D1E-Dy-gOE"/>
                                 </connections>
@@ -153,6 +160,8 @@
                             <constraint firstItem="D8Y-jF-yzo" firstAttribute="bottom" secondItem="mEb-UR-Mep" secondAttribute="bottom" id="15x-17-AZK"/>
                             <constraint firstItem="D8Y-jF-yzo" firstAttribute="top" secondItem="4Kt-P9-ejf" secondAttribute="top" id="8yx-hU-fhw"/>
                             <constraint firstItem="D8Y-jF-yzo" firstAttribute="leading" secondItem="mEb-UR-Mep" secondAttribute="leading" id="FkF-di-ewz"/>
+                            <constraint firstItem="mEb-UR-Mep" firstAttribute="trailing" secondItem="Ac2-IQ-qLY" secondAttribute="trailing" constant="20" id="MV2-2d-0qT"/>
+                            <constraint firstItem="Ac2-IQ-qLY" firstAttribute="top" secondItem="mEb-UR-Mep" secondAttribute="top" id="XLb-Bz-B1Q"/>
                             <constraint firstItem="D8Y-jF-yzo" firstAttribute="trailing" secondItem="mEb-UR-Mep" secondAttribute="trailing" id="sK8-Tt-nWp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mEb-UR-Mep"/>
@@ -212,15 +221,14 @@
             <objects>
                 <viewController storyboardIdentifier="AprobadosViewController" id="JfN-J2-zNb" customClass="AprobadosViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bY-un-fdi">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="010productividad" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-16-5r1">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrS-ng-aC7">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrS-ng-aC7">
+                                <rect key="frame" x="1169" y="24" width="177" height="38"/>
                                 <state key="normal" title="Button" image="Boton_salir"/>
                                 <connections>
                                     <action selector="salirButtonAction:" destination="JfN-J2-zNb" eventType="touchUpInside" id="Aj7-Fj-Ngv"/>
@@ -231,7 +239,9 @@
                         <constraints>
                             <constraint firstItem="NLM-16-5r1" firstAttribute="top" secondItem="5bY-un-fdi" secondAttribute="top" id="22w-1w-Xnk"/>
                             <constraint firstItem="NLM-16-5r1" firstAttribute="bottom" secondItem="VV9-vg-JQ6" secondAttribute="bottom" id="3o9-CU-9gP"/>
+                            <constraint firstItem="QrS-ng-aC7" firstAttribute="top" secondItem="VV9-vg-JQ6" secondAttribute="top" id="90c-Hv-vGl"/>
                             <constraint firstItem="NLM-16-5r1" firstAttribute="leading" secondItem="VV9-vg-JQ6" secondAttribute="leading" id="dB9-9c-wl0"/>
+                            <constraint firstItem="VV9-vg-JQ6" firstAttribute="trailing" secondItem="QrS-ng-aC7" secondAttribute="trailing" constant="20" id="eeU-2x-VMG"/>
                             <constraint firstItem="NLM-16-5r1" firstAttribute="trailing" secondItem="VV9-vg-JQ6" secondAttribute="trailing" id="flA-ii-foL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VV9-vg-JQ6"/>
@@ -247,15 +257,14 @@
             <objects>
                 <viewController storyboardIdentifier="RechazadosViewController" id="02v-qs-2LK" customClass="RechazadosViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mdw-Iq-sGr">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="010productividad" translatesAutoresizingMaskIntoConstraints="NO" id="91Q-Td-2GS">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-Wr-6ve">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-Wr-6ve">
+                                <rect key="frame" x="1169" y="24" width="177" height="38"/>
                                 <state key="normal" title="Button" image="Boton_salir"/>
                                 <connections>
                                     <action selector="salirButtonAction:" destination="02v-qs-2LK" eventType="touchUpInside" id="yJB-87-byQ"/>
@@ -266,6 +275,8 @@
                         <constraints>
                             <constraint firstItem="91Q-Td-2GS" firstAttribute="trailing" secondItem="Kjf-Oq-2Ww" secondAttribute="trailing" id="6al-6n-pSi"/>
                             <constraint firstItem="91Q-Td-2GS" firstAttribute="bottom" secondItem="Kjf-Oq-2Ww" secondAttribute="bottom" id="O3b-FL-Cdx"/>
+                            <constraint firstItem="Kjf-Oq-2Ww" firstAttribute="trailing" secondItem="ugU-Wr-6ve" secondAttribute="trailing" constant="20" id="TAB-IA-CBL"/>
+                            <constraint firstItem="ugU-Wr-6ve" firstAttribute="top" secondItem="Kjf-Oq-2Ww" secondAttribute="top" id="YWz-t5-uPH"/>
                             <constraint firstItem="91Q-Td-2GS" firstAttribute="leading" secondItem="Kjf-Oq-2Ww" secondAttribute="leading" id="c4h-5r-piF"/>
                             <constraint firstItem="91Q-Td-2GS" firstAttribute="top" secondItem="mdw-Iq-sGr" secondAttribute="top" id="noL-tn-Thc"/>
                         </constraints>
@@ -282,15 +293,14 @@
             <objects>
                 <viewController storyboardIdentifier="DigitalizadosViewController" id="58X-uq-yx4" customClass="DigitalizadosViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KuO-4f-oIf">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="010productividad" translatesAutoresizingMaskIntoConstraints="NO" id="VoV-MV-VM9">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-VF-e8e">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-VF-e8e">
+                                <rect key="frame" x="1169" y="24" width="177" height="38"/>
                                 <state key="normal" title="Button" image="Boton_salir"/>
                                 <connections>
                                     <action selector="salirButtonAction:" destination="58X-uq-yx4" eventType="touchUpInside" id="8dG-Bs-hm2"/>
@@ -299,7 +309,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Iw5-VF-e8e" firstAttribute="top" secondItem="Ca6-Ab-KhX" secondAttribute="top" id="1iN-Zg-aat"/>
                             <constraint firstItem="VoV-MV-VM9" firstAttribute="bottom" secondItem="Ca6-Ab-KhX" secondAttribute="bottom" id="7EI-k3-f43"/>
+                            <constraint firstItem="Ca6-Ab-KhX" firstAttribute="trailing" secondItem="Iw5-VF-e8e" secondAttribute="trailing" constant="20" id="DK2-7T-3Cl"/>
                             <constraint firstItem="VoV-MV-VM9" firstAttribute="top" secondItem="KuO-4f-oIf" secondAttribute="top" id="OXL-li-MbA"/>
                             <constraint firstItem="VoV-MV-VM9" firstAttribute="leading" secondItem="Ca6-Ab-KhX" secondAttribute="leading" id="YFG-pb-qN8"/>
                             <constraint firstItem="VoV-MV-VM9" firstAttribute="trailing" secondItem="Ca6-Ab-KhX" secondAttribute="trailing" id="k0Q-Z2-ubY"/>
@@ -317,59 +329,60 @@
             <objects>
                 <viewController storyboardIdentifier="PortfolioViewController" id="ixw-fv-cwU" customClass="PortfolioViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dys-na-SdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="07MaterialVentas3" translatesAutoresizingMaskIntoConstraints="NO" id="2RV-a9-blp">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-wb-AaC">
-                                <rect key="frame" x="49" y="146" width="180" height="269"/>
+                                <rect key="frame" x="64" y="214" width="250" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="2gD-gS-ym7" kind="show" id="XNb-cQ-V93"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-Fz-Z6Q">
-                                <rect key="frame" x="267" y="430" width="491" height="274"/>
+                                <rect key="frame" x="357" y="574" width="651" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISg-qY-wLh">
-                                <rect key="frame" x="293" y="146" width="190" height="259"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="PDFButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="LZR-Eg-d3V"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgV-8t-pve">
-                                <rect key="frame" x="267" y="430" width="491" height="274"/>
+                                <rect key="frame" x="357" y="574" width="651" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playVideoButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="on4-SA-JxW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-nl-WlO">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-nl-WlO">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="yH7-ZV-6mc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8Z-6g-OCR">
-                                <rect key="frame" x="543" y="146" width="189" height="244"/>
+                                <rect key="frame" x="732" y="214" width="246" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playVideoFullButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="Vem-Pm-lkP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISg-qY-wLh">
+                                <rect key="frame" x="391" y="196" width="243" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="PDFButtonAction:" destination="ixw-fv-cwU" eventType="touchUpInside" id="LZR-Eg-d3V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5Dt-nl-WlO" firstAttribute="top" secondItem="Mtv-nF-taN" secondAttribute="top" id="Qih-wZ-WcI"/>
                             <constraint firstItem="2RV-a9-blp" firstAttribute="leading" secondItem="Mtv-nF-taN" secondAttribute="leading" id="WxN-fy-nfQ"/>
                             <constraint firstItem="2RV-a9-blp" firstAttribute="top" secondItem="dys-na-SdC" secondAttribute="top" id="pxi-Kg-uPc"/>
                             <constraint firstItem="2RV-a9-blp" firstAttribute="bottom" secondItem="Mtv-nF-taN" secondAttribute="bottom" id="ySB-uV-kfU"/>
                             <constraint firstItem="2RV-a9-blp" firstAttribute="trailing" secondItem="Mtv-nF-taN" secondAttribute="trailing" id="zgP-Qy-ztT"/>
+                            <constraint firstItem="Mtv-nF-taN" firstAttribute="trailing" secondItem="5Dt-nl-WlO" secondAttribute="trailing" constant="20" id="zp8-gT-cnc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mtv-nF-taN"/>
                     </view>
@@ -380,22 +393,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GC6-kI-m3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4001.9531249999995" y="-745.3125"/>
+            <point key="canvasLocation" x="4001.9033674963393" y="-745.3125"/>
         </scene>
         <!--Library-->
         <scene sceneID="n6b-kg-T8i">
             <objects>
                 <viewController storyboardIdentifier="LibraryViewController" id="jZA-1s-OJJ" customClass="LibraryViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lvk-nm-834">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="06Elearning" translatesAutoresizingMaskIntoConstraints="NO" id="SU4-Ir-6cc">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxQ-s7-mO6">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxQ-s7-mO6">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="jZA-1s-OJJ" eventType="touchUpInside" id="dcS-WI-8gV"/>
@@ -405,7 +417,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SU4-Ir-6cc" firstAttribute="trailing" secondItem="GUr-3w-MRe" secondAttribute="trailing" id="Kgr-5E-BYN"/>
+                            <constraint firstItem="GUr-3w-MRe" firstAttribute="trailing" secondItem="wxQ-s7-mO6" secondAttribute="trailing" constant="20" id="Ofr-uK-pIW"/>
                             <constraint firstItem="SU4-Ir-6cc" firstAttribute="bottom" secondItem="GUr-3w-MRe" secondAttribute="bottom" id="Y0J-mL-zlO"/>
+                            <constraint firstItem="wxQ-s7-mO6" firstAttribute="top" secondItem="GUr-3w-MRe" secondAttribute="top" id="olJ-7P-kl3"/>
                             <constraint firstItem="SU4-Ir-6cc" firstAttribute="top" secondItem="lvk-nm-834" secondAttribute="top" id="rwf-ux-rAv"/>
                             <constraint firstItem="SU4-Ir-6cc" firstAttribute="leading" secondItem="GUr-3w-MRe" secondAttribute="leading" id="wFp-oF-NkZ"/>
                         </constraints>
@@ -422,15 +436,14 @@
             <objects>
                 <viewController storyboardIdentifier="PerformanceViewController" id="59q-13-33J" customClass="PerformanceViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TW3-wv-FF2">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="05Desempenio" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-DZ-Xu5">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="959"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-da-jP2">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-da-jP2">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="59q-13-33J" eventType="touchUpInside" id="6d5-e6-Idw"/>
@@ -440,7 +453,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6cX-DZ-Xu5" firstAttribute="leading" secondItem="Gqf-FS-XSq" secondAttribute="leading" id="0mB-Jy-O0I"/>
+                            <constraint firstItem="Fut-da-jP2" firstAttribute="top" secondItem="Gqf-FS-XSq" secondAttribute="top" id="0mb-59-kfg"/>
                             <constraint firstItem="6cX-DZ-Xu5" firstAttribute="top" secondItem="TW3-wv-FF2" secondAttribute="top" id="4Ld-0x-Kmb"/>
+                            <constraint firstItem="Gqf-FS-XSq" firstAttribute="trailing" secondItem="Fut-da-jP2" secondAttribute="trailing" constant="20" id="QB3-Sc-chP"/>
                             <constraint firstItem="6cX-DZ-Xu5" firstAttribute="trailing" secondItem="Gqf-FS-XSq" secondAttribute="trailing" id="aQA-Hz-Krq"/>
                             <constraint firstItem="6cX-DZ-Xu5" firstAttribute="bottom" secondItem="Gqf-FS-XSq" secondAttribute="bottom" id="lJH-rJ-Z9f"/>
                         </constraints>
@@ -457,15 +472,14 @@
             <objects>
                 <viewController storyboardIdentifier="CreditViewController" id="2gD-gS-ym7" customClass="CreditViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UAV-6D-mY0">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04Creditos" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-i1-DtS">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-YC-qfH">
-                                <rect key="frame" x="881" y="20" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-YC-qfH">
+                                <rect key="frame" x="1223" y="24" width="123" height="38"/>
                                 <state key="normal" image="Boton_regresar"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="2gD-gS-ym7" eventType="touchUpInside" id="4Zc-jz-gK6"/>
@@ -475,9 +489,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eRh-i1-DtS" firstAttribute="trailing" secondItem="Kk8-H9-aPj" secondAttribute="trailing" id="DCQ-8e-v8r"/>
+                            <constraint firstItem="Bqu-YC-qfH" firstAttribute="top" secondItem="Kk8-H9-aPj" secondAttribute="top" id="PYL-AC-kud"/>
                             <constraint firstItem="eRh-i1-DtS" firstAttribute="top" secondItem="UAV-6D-mY0" secondAttribute="top" id="QJo-8q-dh9"/>
                             <constraint firstItem="eRh-i1-DtS" firstAttribute="leading" secondItem="Kk8-H9-aPj" secondAttribute="leading" id="h2u-ZA-eVc"/>
                             <constraint firstItem="eRh-i1-DtS" firstAttribute="bottom" secondItem="Kk8-H9-aPj" secondAttribute="bottom" id="hUo-mi-pOx"/>
+                            <constraint firstItem="Kk8-H9-aPj" firstAttribute="trailing" secondItem="Bqu-YC-qfH" secondAttribute="trailing" constant="20" id="y1e-GK-wbF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kk8-H9-aPj"/>
                     </view>
@@ -492,61 +508,60 @@
             <objects>
                 <viewController storyboardIdentifier="UserMenuViewController" id="WfE-Yi-ImE" customClass="UserMenuViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U81-Pc-Ldn">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02menuHSBC" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-br-9WH">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku1-E9-cAi">
-                                <rect key="frame" x="148" y="202" width="130" height="154"/>
+                                <rect key="frame" x="218" y="273" width="130" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="agentaButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="7ds-Fl-71J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2So-Xd-Q8m">
-                                <rect key="frame" x="439" y="202" width="130" height="154"/>
+                                <rect key="frame" x="618" y="273" width="130" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="activitiesButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="kCu-Wk-mxH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dc-AM-7bS">
-                                <rect key="frame" x="745" y="202" width="130" height="154"/>
+                                <rect key="frame" x="1022" y="273" width="130" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="planningButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="R7f-ud-f3T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-0R-Iju">
-                                <rect key="frame" x="154" y="435" width="130" height="169"/>
+                                <rect key="frame" x="218" y="611" width="130" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="portfolioButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="2qc-5W-ZuQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQw-fe-REq">
-                                <rect key="frame" x="445" y="435" width="149" height="173"/>
+                                <rect key="frame" x="609" y="611" width="149" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="libraryButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="WVa-YC-VhR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDY-w2-HRb">
-                                <rect key="frame" x="735" y="435" width="152" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="performanceButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="BrV-sI-MLA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwW-Kk-eS6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwW-Kk-eS6">
                                 <rect key="frame" x="20" y="38" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Boton_salir"/>
                                 <connections>
                                     <action selector="salirButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="U5u-Y0-A78"/>
                                     <action selector="salirButtonAction:" destination="0VY-EC-Fa3" eventType="touchUpInside" id="tzX-Xg-8v0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDY-w2-HRb">
+                                <rect key="frame" x="1000" y="606" width="152" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="performanceButtonAction:" destination="WfE-Yi-ImE" eventType="touchUpInside" id="BrV-sI-MLA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -554,6 +569,8 @@
                         <constraints>
                             <constraint firstItem="2cR-br-9WH" firstAttribute="top" secondItem="U81-Pc-Ldn" secondAttribute="top" id="CcG-0F-cJZ"/>
                             <constraint firstItem="2cR-br-9WH" firstAttribute="bottom" secondItem="u34-BD-SrV" secondAttribute="bottom" id="Exj-Sm-GRm"/>
+                            <constraint firstItem="wwW-Kk-eS6" firstAttribute="top" secondItem="u34-BD-SrV" secondAttribute="top" constant="14" id="VDp-nf-C38"/>
+                            <constraint firstItem="wwW-Kk-eS6" firstAttribute="leading" secondItem="u34-BD-SrV" secondAttribute="leading" constant="20" id="hP4-fp-mG2"/>
                             <constraint firstItem="2cR-br-9WH" firstAttribute="trailing" secondItem="u34-BD-SrV" secondAttribute="trailing" id="teE-GT-Nbw"/>
                             <constraint firstItem="2cR-br-9WH" firstAttribute="leading" secondItem="u34-BD-SrV" secondAttribute="leading" id="yDG-y7-Z6S"/>
                         </constraints>
@@ -570,46 +587,46 @@
             <objects>
                 <viewController storyboardIdentifier="LogInViewController" id="9QL-sa-MGe" customClass="LogInViewController" customModule="Consubanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w5G-cw-gVG">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xS-SN-z4k">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQS-BG-ezM">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1000"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01login" translatesAutoresizingMaskIntoConstraints="NO" id="4FK-Wq-hXX">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01login" translatesAutoresizingMaskIntoConstraints="NO" id="4FK-Wq-hXX">
+                                                <rect key="frame" x="0.0" y="0.0" width="1366" height="768"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msf-eA-Du1">
-                                                <rect key="frame" x="386" y="451" width="252" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <action selector="logInbuttonAction:" destination="9QL-sa-MGe" eventType="touchUpInside" id="bfH-NG-uIP"/>
-                                                </connections>
-                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-AE-DmL">
-                                                <rect key="frame" x="386" y="313" width="252" height="30"/>
+                                                <rect key="frame" x="557" y="313" width="253" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlG-a3-9cu">
-                                                <rect key="frame" x="501" y="544" width="22" height="22"/>
+                                                <rect key="frame" x="672" y="563" width="22" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="infoButtonAction:" destination="9QL-sa-MGe" eventType="touchUpInside" id="ZQf-a3-vNv"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STj-Kd-9jX">
-                                                <rect key="frame" x="386" y="373" width="252" height="30"/>
+                                                <rect key="frame" x="557" y="369" width="253" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msf-eA-Du1">
+                                                <rect key="frame" x="557" y="451" width="253" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="logInbuttonAction:" destination="9QL-sa-MGe" eventType="touchUpInside" id="bfH-NG-uIP"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -648,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nv6-QQ-Tvt" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="119"/>
+            <point key="canvasLocation" x="884.62664714494872" y="118.94531249999999"/>
         </scene>
     </scenes>
     <resources>
